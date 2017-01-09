@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<title>tosee.pl</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript">
+ 
+    $(function(){
+ 
+    $("#wysuwane").css("left","-210px");
+ 
+$("#wysuwane").hover(
+  function () {
+    $("#wysuwane").animate({left: "0px"}, 1000 );
+        $(this).addClass("zamknij");
+  },
+  function () {
+    $("#wysuwane").animate({left: "-210px"}, 1000 );
+        $(this).removeClass("zamknij");
+  }
+);
+});
+    </script>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+.style1 {
+	font-size: x-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+body {
+	background-color: #000000;
+}
+.biale {color: #CCCCCC}
+.style38 {font-size: small}
+.style39 {font-size: medium}
+
+#wysuwane
+{
+ 
+    background: url("http://burned.pl/wp-content/uploads/2011/02/fbpodklad.png") no-repeat scroll 0 0 transparent;
+ 
+    padding: 10px;
+    width: 235px;
+    height:402px;
+ 
+    position: fixed;
+    margin-top: -200px; /*połowa wysokoci panelu w górę */
+    left: 0px;
+    top: 50%;
+ 
+}
+.zamknij
+{
+    background-position: 0px 0px -242px 0px;
+}
+
+-->
+</style>
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('1a.jpg','2a.jpg','3a.jpg','4a.jpg')">
+
+<div id="wysuwane">
+ 
+<div id="wewnatrz" style="float:left;width:150px; display:block; margin-left:-10px;">
+ 
+<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2Ftoseepl%2F111669452244741&amp;width=210&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=380" style="border: medium none; overflow: hidden; width: 210px; height: 380px;" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+</div>
+ 
+</div>
+
+<br><br>
+
+<table id="Table_01" width="612" height="612" border="0" cellpadding="0" cellspacing="0" align="center">
+
+  <tr>
+    <td colspan="2">
+    <a href="http://www.youtube.com/user/truthsee" target="_blank" onMouseOver="MM_swapImage('Image15','','1a.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="1.jpg" name="Image15" width="612" height="204"  border="0"></a>
+    </td>
+  </tr>
+  
+  <tr>
+ <td rowspan="2"><a href="http://vimeo.com/user3790543" target="_blank" onMouseOver="MM_swapImage('Image17','','2a.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="2.jpg" name="Image17" width="337" height="408" border="0"></a>
+ </td>
+ <td><a href="http://picasaweb.google.com/Trusee" target="_blank" onMouseOver="MM_swapImage('Image20','','3a.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="3.jpg" name="Image20" width="275" height="176" border="0"></a>
+ </td>
+ </tr>
+
+<tr>
+<td><a href="mailto:tosee@o2.pl" target="_blank" onMouseOver="MM_swapImage('Image19','','4a.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="4.jpg" name="Image19" width="275" height="232" border="0"></a></td>
+</tr>
+</table>
+</body>
+</html>
