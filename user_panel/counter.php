@@ -72,6 +72,14 @@
     
     <div style="clear:both; height:10px;"></div>
     
+    <div class="label">Komentarz:</div>
+    <div class="form-input" style="margin-right:10px; width:670px;">
+        <input type="text" name="outcome_comment" id="outcome_comment" />
+    </div>
+    
+    
+    <div style="clear:both; height:10px;"></div>
+    
     <div style="width:200px; float:left;">&nbsp;</div>
     <div style="float:left;">
     <input type="hidden" name="outcome_category" id="outcome_category" value="" />

@@ -20,6 +20,7 @@
     $outcome_amount = $_POST['outcome_amount'];
     $outcome_category = $_POST['outcome_category'];
     $income_amount = $_POST['income_amount'];
+    $description = $_POST['outcome_comment'];
     
     $outcome_date = $_POST['outcome_date'];
     $income_date = $_POST['income_date'];
@@ -66,7 +67,7 @@
     $proper_amount_income = implode('.', $splitted_income);
     $proper_amount_outcome = implode('.', $splitted_outcome);
 
-    save_operation($wallet_id, $proper_amount_income, $income_date, $proper_amount_outcome, $outcome_category, $outcome_date);
+    save_operation($wallet_id, $proper_amount_income, $income_date, $proper_amount_outcome, $outcome_category, $outcome_date, $description);
     
     header('Location: ../portal.php?o=O&page=counter&wallet_id='.$wallet_id);
     

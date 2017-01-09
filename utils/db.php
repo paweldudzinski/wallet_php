@@ -2,10 +2,10 @@
 error_reporting(0);
 ini_set('display_errors', 0);
 
-//$username = "dbo443604442";
-//$password = "wallet666";
-//$hostname = "db443604442.db.1and1.com";
-//$database ="db443604442";
+//$username = "root";
+//$password = "imanzoel";
+//$hostname = "localhost";
+//$database ="wallet";
 
 $username = "m13730_wallet";
 $password = "kB7P3HtirPNE9jk36kxP";
@@ -407,7 +407,7 @@ function save_savings_operation($logged_user, $proper_amount_outcome, $outcome_d
     }
 }
 
-function save_operation($wallet_id, $proper_amount_income, $income_date, $proper_amount_outcome, $outcome_category, $outcome_date) {
+function save_operation($wallet_id, $proper_amount_income, $income_date, $proper_amount_outcome, $outcome_category, $outcome_date, $description) {
     
     is_numeric($proper_amount_income) ? $proper_amount_income = $proper_amount_income : $proper_amount_income = 0;
     is_numeric($proper_amount_outcome) ? $proper_amount_outcome = $proper_amount_outcome : $proper_amount_outcome = 0;
@@ -428,6 +428,7 @@ function save_operation($wallet_id, $proper_amount_income, $income_date, $proper
                  us_id = ".get_logged_user().",
                  wallet_id = ".$wallet_id.",
                  amount = ".$proper_amount_outcome.",
+                 description = '".$description."',
                  category_id = ".$outcome_category.",
                  type = 'O',
                  when_created = '".date("Y-m-d", strtotime($outcome_date))."'";

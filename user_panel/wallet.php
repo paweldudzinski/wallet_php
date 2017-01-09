@@ -133,6 +133,9 @@
             <?php
                 if ($o['category_id'] && $o['type']=='O') {
                     echo print_category($o['category_id']);
+                    if ($o['description']) {
+						echo "<br /><span style='font-size:0.8em;'>(".$o['description'].")</span>";
+					}
                 } else {
                     echo "<em>Wpłata</em>";
                 }
